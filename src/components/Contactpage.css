@@ -1,0 +1,45 @@
+.contact-container {
+  position: relative;
+}
+
+.contact-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust width as needed */
+  background: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Adjust the overlay background color and opacity */
+  color: white;
+  padding: 20px;
+}
+
+/* Adjust font sizes and styles for different screen sizes */
+@media (max-width: 768px) {
+  .text-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-overlay p {
+    font-size: 1rem;
+  }
+}
+
+/* Styles for the form */
+.subscribe-form {
+  max-width: 100%;
+}
+
+.subscribe-form button {
+  width: 100%;
+}
